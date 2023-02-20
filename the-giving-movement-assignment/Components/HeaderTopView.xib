@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HeaderTopView" customModule="the_giving_movement_assignment" customModuleProvider="target">
+            <connections>
+                <outlet property="sideBarBackButton" destination="sHb-4R-SEV" id="YBe-n1-rLX"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="400" height="59"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sHb-4R-SEV">
+                    <rect key="frame" x="8" y="7.5" width="42" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="2sC-cW-rCT"/>
+                        <constraint firstAttribute="width" constant="42" id="OCq-PH-WJj"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" image="iconHamburger" title=" "/>
+                    <connections>
+                        <action selector="sideMenuButtonTap:" destination="-1" eventType="touchUpInside" id="kSG-F4-S1x"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nEH-9k-zSp">
+                    <rect key="frame" x="350" y="7.5" width="42" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="42" id="lQV-7D-1hi"/>
+                        <constraint firstAttribute="height" constant="44" id="lgu-U6-qqI"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" image="iconShoppingBag" title=" "/>
+                    <connections>
+                        <action selector="shoppingBagButtonTap:" destination="-1" eventType="touchUpInside" id="cey-sG-Z6x"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nJ9-eQ-6rT">
+                    <rect key="frame" x="306" y="7.5" width="42" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="42" id="Sgl-ve-ar1"/>
+                        <constraint firstAttribute="height" constant="44" id="tvX-Lv-2VD"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" image="iconFavorites" title=" "/>
+                    <connections>
+                        <action selector="favoritesButtonTap:" destination="-1" eventType="touchUpInside" id="n5z-dS-sbg"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RHS-Ub-joO">
+                    <rect key="frame" x="102" y="5.5" width="196" height="48.5"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" image="iconLogo" title=" "/>
+                    <connections>
+                        <action selector="homeButtonTap:" destination="-1" eventType="touchUpInside" id="uqY-Eq-dns"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sc4-Tk-fmM">
+                    <rect key="frame" x="52" y="7.5" width="42" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="42" id="GXn-2X-xFJ"/>
+                        <constraint firstAttribute="height" constant="44" id="o1o-u5-Mn5"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" image="iconSearch" title=" "/>
+                    <connections>
+                        <action selector="searchButtonTap:" destination="-1" eventType="touchUpInside" id="vfJ-Tc-Nch"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="sc4-Tk-fmM" firstAttribute="leading" secondItem="sHb-4R-SEV" secondAttribute="trailing" constant="2" id="23J-EY-ZoS"/>
+                <constraint firstItem="RHS-Ub-joO" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="KiQ-4B-zyk"/>
+                <constraint firstAttribute="trailing" secondItem="nEH-9k-zSp" secondAttribute="trailing" constant="8" id="Nvf-QV-nhI"/>
+                <constraint firstItem="sHb-4R-SEV" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="SXB-cZ-bmN"/>
+                <constraint firstItem="nEH-9k-zSp" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="VkI-TH-FyL"/>
+                <constraint firstItem="nJ9-eQ-6rT" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="RHS-Ub-joO" secondAttribute="trailing" constant="8" id="Wy8-Y2-GYD"/>
+                <constraint firstItem="nEH-9k-zSp" firstAttribute="leading" secondItem="nJ9-eQ-6rT" secondAttribute="trailing" constant="2" id="k8v-4v-I8W"/>
+                <constraint firstItem="RHS-Ub-joO" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="num-pl-nOD"/>
+                <constraint firstItem="sc4-Tk-fmM" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="pC7-Lr-gme"/>
+                <constraint firstItem="RHS-Ub-joO" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="sc4-Tk-fmM" secondAttribute="trailing" constant="8" id="wVm-yn-MaO"/>
+                <constraint firstItem="nJ9-eQ-6rT" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="wrx-GO-1fw"/>
+                <constraint firstItem="sHb-4R-SEV" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="zZI-HP-iyX"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="127.53623188405798" y="-136.27232142857142"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="iconFavorites" width="26.5" height="26.5"/>
+        <image name="iconHamburger" width="26.5" height="26.5"/>
+        <image name="iconLogo" width="224.5" height="34.5"/>
+        <image name="iconSearch" width="26.5" height="26.5"/>
+        <image name="iconShoppingBag" width="26.5" height="26.5"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
